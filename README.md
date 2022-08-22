@@ -20,8 +20,8 @@ Add it in your root build.gradle at the end of repositories:
   
   Step 3:
   Add Recyclerview to the Layout
-  
-  <com.veera.android.widget.recyclerview.CustomRecyclerView
+ ``` 
+	<com.veera.android.widget.recyclerview.CustomRecyclerView
           android:id="@+id/recyclerview" 
           android:layout_width="match_parent" 
           android:layout_height="wrap_content"
@@ -30,7 +30,9 @@ Add it in your root build.gradle at the end of repositories:
           app:layout_constraintTop_toTopOf="parent"
           app:layoutManager="LinearLayoutManager"
           android:tag="layout/activity_recyclerview_0"/>
-          
+
+
+  ```        
    Step 4:
    Submit data to adapter and assign to RecyclerView
    
