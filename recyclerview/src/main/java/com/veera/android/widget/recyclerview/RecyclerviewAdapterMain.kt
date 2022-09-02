@@ -22,6 +22,7 @@ class RecyclerviewAdapterMain(val item:(String) -> Unit) :
         }
     }
 
+    //recyclerview viewholder
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -29,6 +30,7 @@ class RecyclerviewAdapterMain(val item:(String) -> Unit) :
         return RecyclerviewAdapterViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_list_item,parent,false))
     }
 
+    //recyclerview onbindviewholder
     override fun onBindViewHolder(holder: RecyclerviewAdapterViewHolder, position: Int) {
         Log.d(TAG,"onBindViewHolder")
         val data  = getItem(position)
